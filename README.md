@@ -277,7 +277,7 @@ python3 manage.py runserver
 ### ...
 
 ### Diagrama
-<img src="diagrama.png" alt="dr"/>
+<img src="diagrama.PNG" alt="dr"/>
 ```
 
 ```
