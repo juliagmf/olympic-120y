@@ -5,10 +5,8 @@ from django.db.models.query import QuerySet
 from rest_framework import filters
 from rest_framework import serializers, viewsets
 
-
-
 from olympic.models import Athlete, Games, Event, AthleteEvent
-from olympic.serializers import AthleteSerializer, GamesSerializer, EventSerializer, AthleteEventSerializer
+from olympic.serializer import AthleteSerializer, GamesSerializer, EventSerializer, AthleteEventSerializer
 
 
 class AthleteViewSet(viewsets.ModelViewSet):

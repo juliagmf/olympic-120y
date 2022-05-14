@@ -29,6 +29,5 @@ router.register('athlete_event', AthleteEventViewSet, basename='AthleteEvent')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(router.urls)),
-#    path('upload/', UploadFileView.as_view(), name='upload-file')
 
 ]
