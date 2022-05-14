@@ -140,8 +140,7 @@ crie o arquivo scripts/load_csv.py
 
 ### Open csv
 scripts/load_csv.py
-```
-```
+
 Executando o arquivo
 ```
 python manage.py runscript load_csv
@@ -278,6 +277,4 @@ python3 manage.py runserver
 
 ### Diagrama
 <img src="diagrama.PNG" alt="dr"/>
-```
 
-```
