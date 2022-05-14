@@ -1,16 +1,15 @@
 from django.db import models
-from uuid import uuid4
 
 # Create your models here.
 
 class Athlete(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid4, editable=False, unique=True)
+    athlete_id = models.CharField(max_length=255, default='0000000')
     name = models.CharField(max_length=255)
     SEX = (
         ('M', 'M'),
         ('F', 'F'),
         )
-    age = models.IntegerField(blank=True, null=True)
+    age = models.CharField(max_length=5, blank=True, null=True)
     height = models.CharField(max_length=5)
     weight = models.CharField(max_length=5)
     team = models.CharField(max_length=120)
@@ -20,6 +19,7 @@ class Athlete(models.Model):
     def __str__(self):
         return self.name
 class Games(models.Model):
+    games = models.CharField(max_length=255, null=True)
     year = models.CharField(max_length=4)
     SEASON = (
         ("Summer", "Summer"),
